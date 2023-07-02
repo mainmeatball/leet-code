@@ -14,6 +14,9 @@ public class Solution1431 {
             max = Math.max(candy, max);
         }
         final List<Boolean> result = new ArrayList<>(candies.length);
-
+        for (final int candy : candies) {
+            result.add(candy + extraCandies >= max);
+        }
+        return result;
     }
 }
