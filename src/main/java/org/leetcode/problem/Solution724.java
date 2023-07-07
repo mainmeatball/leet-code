@@ -4,7 +4,6 @@ package org.leetcode.problem;
  * Find Pivot Index
  */
 public class Solution724 {
-
     public int pivotIndex(int[] nums) {
         final int[] sumsL = new int[nums.length];
         final int[] sumsR = new int[nums.length];
@@ -31,11 +30,5 @@ public class Solution724 {
         }
 
         return -1;
-    }
-
-    public static void main(String[] args) {
-        final int[] nums = new int[] {1,7,3,6,5,6};
-        final Solution724 s = new Solution724();
-        s.pivotIndex(nums);
     }
 }
